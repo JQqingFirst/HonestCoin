@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="description" content="hnc">
+    <meta name="keywords" content="hnc">
+    <title>账户充值</title>
+    <link href="../static/lib/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/lib/bootstrapValidator.min.css"/>
+    <link href="../static/lib/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="../static/css/common.css" rel="stylesheet">-->
+    <link href="../static/css/style.css" rel="stylesheet">
+
+    <script src="../static/lib/jquery-3.3.1.min.js"></script>
+    <script src="../static/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/lib/bootstrapValidator.min.js"></script>
+</head>
+<body>
+<div class="wrap1">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="../static/images/logo_hnc.png">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="content-main">
+        <div class="container">
+            <!--<div class="row"></div>-->
+            <div class="col-md-2 col-xs-2 bgwhite main-left">
+                <ul>
+                    <li><a class="active" href="#">账户余额</a></li>
+                    <li><a href="#">购买HNC</a></li>
+                    <li><a href="#">赎回HNC</a></li>
+                    <li><a href="#">用户信息</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 col-xs-9 bgwhite main-right">
+                <div class="recharge-box clearfix">
+                    <ul class="steps col-lg-1">
+                        <li class="circle-li">1</li>
+                        <li class="line-li height280"></li>
+                        <li class="circle-li">2</li>
+                        <li class="line-li height85"></li>
+                        <li class="circle-li">3</li>
+                        <li class="line-li height55"></li>
+                        <li class="circle-li">4</li>
+                    </ul>
+                    <div class="col-lg-9">
+                        <p class="font-com">HonestCoin银行账户信息<span class="small fr pr50">请使用wire（电汇）方式付款</span></p>
+                        <div class="form-horizontal recharge-box-main">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">银行名称</label>
+                                <div class="col-sm-8">Slivergate BankSlivergate</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">银行地址</label>
+                                <div class="col-sm-8">Slivergate Bank BankSlivergate</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Routine Number</label>
+                                <div class="col-sm-8">12345678</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">银行账号</label>
+                                <div class="col-sm-8">1234577555555555</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">收款人名称</label>
+                                <div class="col-sm-8">Slivergate BankSlivergate</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">收款人地址</label>
+                                <div class="col-sm-8">Slivergate BankSlivergateSlivergate BankSlivergatSlivergate BankSlivergatSlivergate BankSlivergatSlivergate BankSlivergat</div>
+                            </div>
+                        </div>
+                        <p class="small">如果您是个人，请使用您本人名下的一行账户付；如果您是机构，请使用贵公司名下的银行账户；否则无法到账。</p>
+                        <div class="form-group col-lg-7" style="padding-left: 0;">
+                            <label style="font-weight: normal;">付款联系人信息</label>
+                            <input type="text" class="form-control" name="username" value="姓名* Johnnyzhao"/>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-7" style="padding-left: 0;">
+                                <input type="text" class="form-control" placeholder="邮箱*" name="email"/>
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-9" style="padding-left: 0; margin-top: 18px;">
+                            <label style="font-weight: normal;">充值金额</label>
+                            <input type="text" class="form-control" name="username" value="充值金额* USD"/>
+                            <p class="small" style="margin-top: 8px;">由于银行会收取手续费，充值金额以我们收到的USD为准</p>
+                        </div>
+                        <div class="form-group col-lg-9" style="padding-left: 0;">
+                            <label style="font-weight: normal;">充值金额</label>
+                            <div class="fontblue">djfldfldklfkdlkfjldkjflkfjlkf</div>
+                            <p class="small" style="margin-top: 8px;">由于银行会收取手续费，充值金额以我们收到的USD为准</p>
+                        </div>
+                        <div class="col-lg-7 col-lg-offset-1">
+                            <button class="btn btn-primary">立即充值</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $('#form_reg').bootstrapValidator({
+            message: 'This value is not valid',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: '请输入邮箱'
+                        },
+                        emailAddress: {
+                            message: '邮箱地址格式不正确'
+                        }
+                    }
+                },
+                password: {
+                    validators: {
+                        notEmpty: {
+                            message: '请输入密码'
+                        }
+                    }
+                },
+                confirmPassword: {
+                    validators: {
+                        notEmpty: {
+                            message: '请再次输入密码'
+                        },
+                        identical: {
+                            field: 'password',
+                            message: '两次密码不一致'
+                        }
+                    }
+                },
+            }
+        });
+    });
+</script>
+</html>

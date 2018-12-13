@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="description" content="hnc">
+    <meta name="keywords" content="hnc">
+    <title>赎回HNC</title>
+    <link href="../static/lib/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/lib/bootstrapValidator.min.css"/>
+    <link href="../static/lib/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="../static/css/common.css" rel="stylesheet">-->
+    <link href="../static/css/style.css" rel="stylesheet">
+
+    <script src="../static/lib/jquery-3.3.1.min.js"></script>
+    <script src="../static/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/lib/bootstrapValidator.min.js"></script>
+</head>
+<body>
+<div class="wrap1">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="../static/images/logo_hnc.png">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="content-main">
+        <div class="container">
+            <!--<div class="row"></div>-->
+            <div class="col-md-2 col-xs-2 bgwhite main-left">
+                <ul>
+                    <li><a href="#">账户余额</a></li>
+                    <li><a href="#">购买HNC</a></li>
+                    <li><a class="active" href="#">赎回HNC</a></li>
+                    <li><a href="#">用户信息</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 col-xs-9 bgwhite main-right text-center" style="padding-top: 50px; padding-bottom: 140px;">
+                <div>HNC赎回地址</div>
+                <p class="small" style="padding-top: 20px;">你可以通过这个地址赎回HNC得到USD。转入任意数量的<br>HNC，我们将往您的HonestCoin余额账户中存入等量的USD。<br>赎币手续费=0</p>
+                <div class="fontblue" style="padding-top: 30px;">kldjfkldjflkdflkdmfkldf898slkfmsmkd</div>
+                <button class="btn btn-default" style="margin-top: 25px;">复制地址</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#form_reg').bootstrapValidator({
+            message: 'This value is not valid',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: '请输入邮箱'
+                        },
+                        emailAddress: {
+                            message: '邮箱地址格式不正确'
+                        }
+                    }
+                },
+                password: {
+                    validators: {
+                        notEmpty: {
+                            message: '请输入密码'
+                        }
+                    }
+                },
+                confirmPassword: {
+                    validators: {
+                        notEmpty: {
+                            message: '请再次输入密码'
+                        },
+                        identical: {
+                            field: 'password',
+                            message: '两次密码不一致'
+                        }
+                    }
+                },
+            }
+        });
+    });
+</script>
+</html>

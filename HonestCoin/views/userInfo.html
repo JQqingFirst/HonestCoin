@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="description" content="hnc">
+    <meta name="keywords" content="hnc">
+    <title>用户信息</title>
+    <link href="../static/lib/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/lib/bootstrapValidator.min.css"/>
+    <link href="../static/lib/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="../static/css/common.css" rel="stylesheet">-->
+    <link href="../static/css/style.css" rel="stylesheet">
+
+    <script src="../static/lib/jquery-3.3.1.min.js"></script>
+    <script src="../static/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/lib/bootstrapValidator.min.js"></script>
+</head>
+<body>
+<div class="wrap1">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="../static/images/logo_hnc.png">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="content-main">
+        <div class="container">
+            <!--<div class="row"></div>-->
+            <div class="col-md-2 col-xs-2 bgwhite main-left">
+                <ul>
+                    <li><a href="#">账户余额</a></li>
+                    <li><a href="#">购买HNC</a></li>
+                    <li><a href="#">赎回HNC</a></li>
+                    <li><a class="active" href="#">用户信息</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 col-xs-9 bgwhite main-right" style="padding-left:0;padding-right: 0;">
+                <table class="table userinfo">
+                    <tr>
+                        <td>邮箱</td>
+                        <td>Johnny@163.com(<span class="small">已验证</span>)</td>
+                        <td class="fontblue">修改</td>
+                    </tr>
+                    <tr>
+                        <td>UID</td>
+                        <td>WWWWW68798033</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>登录密码</td>
+                        <td>********</td>
+                        <td class="fontblue">修改</td>
+                    </tr>
+                    <tr>
+                        <td>资金密码</td>
+                        <td><span class="small">尚未设置资金密码</span></td>
+                        <td class="fontblue">设置</td>
+                    </tr>
+                    <tr>
+                        <td>安全设置</td>
+                        <td><span class="small">尚未绑定谷歌验证器</span></td>
+                        <td class="fontblue">立即绑定</td>
+                    </tr>
+                    <tr>
+                        <td>收款方式</td>
+                        <td>
+                            <ul style="padding-left: 0;">
+                                <li>xxxxxxxxxxxxxxxxxxxx  <span class="fontblue">删除</span></li>
+                                <li>xxxxxxxxxxxxxxxxxxxx  <span class="fontblue">删除</span></li>
+                                <li>xxxxxxxxxxxxxxxxxxxx  <span class="fontblue">删除</span></li>
+                            </ul>
+                        </td>
+                        <td class="fontblue">添加</td>
+                    </tr>
+                    <tr>
+                        <td>注册时间</td>
+                        <td>2018-12-12 18:45:32</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $('#form_reg').bootstrapValidator({
+            message: 'This value is not valid',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: '请输入邮箱'
+                        },
+                        emailAddress: {
+                            message: '邮箱地址格式不正确'
+                        }
+                    }
+                },
+                password: {
+                    validators: {
+                        notEmpty: {
+                            message: '请输入密码'
+                        }
+                    }
+                },
+                confirmPassword: {
+                    validators: {
+                        notEmpty: {
+                            message: '请再次输入密码'
+                        },
+                        identical: {
+                            field: 'password',
+                            message: '两次密码不一致'
+                        }
+                    }
+                },
+            }
+        });
+    });
+</script>
+</html>

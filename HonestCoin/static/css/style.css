@@ -1,0 +1,79 @@
+.wrap{width: 100%; background-color:#fff;}
+.logo_hnc{width:290px;height:62px;background: url(../images/logo_hnc.png) center top no-repeat;-webkit-background-size: 100%;-moz-background-size: 100%;-o-background-size: 100%;background-size: 100%;margin: 70px auto 0;}
+.box{width: 400px;height: auto; margin:50px auto 100px; box-shadow:-2px 2px 6px 2px #ccc;padding: 5px 55px 25px;}
+.box-header{width: 100%;text-align: center;margin-bottom:30px;}
+.box .form-group{margin-bottom: 20px;}
+.btn-from-group{margin-top: 30px;}
+.form-control{border:none; background-color: #eee;height: 36px;}
+.glyphicon-remove{position: absolute;top:10px;right: 23px;color:#b94a48;}
+.glyphicon-ok{position: absolute;top:10px;right: 23px;color: #449d44;}
+
+.btn-primary{width: 100%;}
+.bom-txt{width: 100%;text-align: center;}
+img{width: 100%;}
+
+
+/*login*/
+.forget-paw{width: 100%; text-align: right;margin-top: -10px;}
+.bom-txt1{width: 100%;text-align: center;font-size: 12px; color: #666;margin-bottom: 60px;}
+
+/*find_paw*/
+/*.fon13{font-size: 13px;}*/
+.fon12{font-size: 12px;}
+.fon15{font-size: 15px;}
+.go_email{height: 44px; line-height:44px; border:1px solid #ccc;margin: 17px auto 40px;}
+.col666{color:#666;}
+.martop20{margin-top: 20px;}
+
+.logo_hnc_big{width:350px;height:80px;background: url(../images/logo_hnc.png) center top no-repeat;-webkit-background-size: 100%;-moz-background-size: 100%;-o-background-size: 100%;background-size: 100%;margin: 30px auto;}
+.confirm-con{width:100%;height: auto;  box-shadow:-1px 2px 6px 2px #ccc; margin-bottom: 80px;}
+.confirm-con .page-header{margin-bottom: 40px;}
+.confirm-con .go_email1{height: 44px; line-height:44px; border:1px solid #ccc;margin-top: 25px; margin-bottom: 15px;}
+.padbom{padding-bottom: 60px;}
+
+.padtop{padding-top: 70px;}
+.pass{margin: 20px auto 50px;}
+.glyphicon-ok-circle{color:dodgerblue; font-size: 70px;}
+.pass-txt{font-size: 26px;padding-top: 30px; color: dodgerblue; margin-bottom: 30px;}
+.navbar-default{background-color: #fff;}
+.navbar-brand{width: 220px;}
+
+.wrap1{position: relative; width:100%; height:auto;padding-bottom: 70px; background-color: #f0f2f7;}
+.content-main{position: relative; margin-top: 20px;}
+.bgwhite{background-color: #fff;}
+.main-left{margin: 0 25px; padding-top:30px; padding-bottom: 30px;}
+ul li{list-style: none;margin-bottom: 15px;}
+.main-left a{color:#333; font-weight: 500;}
+.main-left a:hover{text-decoration:none; color: #428bca;}
+.main-left a.active{color:#428bca;}
+.recived,.open-ok,.open-no{padding: 150px 0;}
+.recived p{font-size: 18px;padding-top: 30px; color: dodgerblue;}
+.open-ok .glyphicon-ok-circle{color: #4cae4c;}
+.open-ok p{font-size: 18px;padding-top: 30px; color: #4cae4c;margin-bottom: 20px;}
+.open-no .glyphicon-remove-circle{color: #c9302c;}
+.open-no p{font-size: 18px;padding-top: 30px; color: #c9302c;margin-bottom: 20px;}
+
+.recharge-box{width: 650px;margin: 50px auto 20px; padding-bottom: 50px;}
+.fl{float: left;}
+.fr{float: right;}
+.steps li{display: block;}
+.steps .circle-li{width:20px;height:20px;line-height: 20px;border-radius: 50%;background-color: #ccc;color:#fff; text-align: center;}
+.steps .line-li{width: 1px;background-color: #ccc;margin-left: 10px;}
+.height280{height: 280px;}
+.height100{height: 100px;}
+.height85{height: 85px;}
+.height55{height: 55px;}
+.recharge-box-main{height: auto;border: 1px solid #f0f2f7;background-color: #f3f3f3;padding:10px 15px;margin-bottom: 8px;}
+.font-com{width: 100%;line-height: 20px;}
+.small{font-size: 12px; color: #999;}
+.fontblue{font-size: 16px; color: #66afe9;}
+.pr50{padding-right: 50px;}
+.form-horizontal .control-label{text-align: left;font-weight: 600;}
+.recharge-box-main .form-group{margin-bottom: 8px;}
+.recharge-box-main .form-group .control-label{padding-top:0;}
+
+.tixian-box{width: 470px;margin: 50px auto 20px; padding-bottom: 50px;}
+
+.userinfo>tbody>tr>td{padding-top: 30px;padding-bottom:30px;}
+.userinfo tr td:first-child,.userinfo tr td:nth-child(2){padding-left: 5%;}
+.userinfo tr td:last-child{padding-right: 5%;text-align: right; font-size: 14px;}
